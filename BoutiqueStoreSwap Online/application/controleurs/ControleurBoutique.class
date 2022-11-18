@@ -1,0 +1,17 @@
+<?php
+
+class ControleurBoutique{
+    
+    public function __construct() {
+    }
+
+    
+    public function afficherBoutique() {
+            require Chemins::VUES . 'v_boutique.php';
+            $controleurProduits = new ControleurProduits();
+            $controleurProduits->afficher();
+    }
+
+    
+}
+?>
